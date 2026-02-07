@@ -145,9 +145,24 @@
   .valentine-cat {
     width: 65vw !important; /* Котик станет чуть меньше, чтобы не занимать весь экран */
   }
-    .final-images-container{
-      width: 65vw !important;
-    }
+    .kub-image, .anna-image { 
+    width: 30vw !important; /* Были огромные, стали 30% ширины экрана */
+    max-width: 120px;
+  }
+
+  /* Нижние фото (мы и объект) */
+  .us-image, .final-image { 
+    width: 55vw !important; /* Умеренный размер для центральных фото */
+    max-width: 200px;
+    left: 50% !important;
+    transform: translateX(-50%) !important; /* Центрируем */
+  }
+
+  /* Поправляем координаты, чтобы не было кучи-малы */
+  .kub-image { top: 5% !important; left: 5% !important; }
+  .anna-image { top: 5% !important; right: 5% !important; left: auto !important; }
+  .us-image { bottom: 8% !important; top: auto !important; }
+  .final-image { top: 55% !important; }
 }
   </style>
 </head>
